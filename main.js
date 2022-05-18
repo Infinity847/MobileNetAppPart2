@@ -19,7 +19,7 @@ function draw() {
    if (error) {
      console.error(error);
    }else {
-     if ((results[0].confidence > 0.5) && (previous != results[0].label))
+     if (results[0].confidence > 0.5)
      {
        console.log(results);
        previous = results[0].label;
